@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/scroll_down_shape"/>
+    <item android:drawable="@drawable/ic_keyboard_arrow_down_black_40dp"/>
+</layer-list>

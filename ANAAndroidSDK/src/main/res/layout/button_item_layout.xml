@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="view"
+            type="com.ana.adapters.ChatButtonsAdapter" />
+
+        <variable
+            name="button"
+            type="com.ana.models.Button" />
+
+        <variable
+            name="viewmodel"
+            type="com.ana.viewmodels.ChatViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:theme="?ChatButtonStyle"
+        android:background="?chatButtonBg"
+        android:gravity="center"
+        android:minWidth="150dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif"
+            android:onClick="@{()->viewmodel.onButtonClick(button)}"
+            android:text="@{viewmodel.getParsedPrefixPostfixText(button.buttonText)}"/>
+
+    </LinearLayout>
+</layout>

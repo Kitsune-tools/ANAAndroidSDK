@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ChatBotToolBarTheme" parent="ThemeOverlay.AppCompat">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <!--
+            customize chat bot toolbar theme
+        -->
+    </style>
+
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="ChatbotTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- <item name="scrollDownIcon">@drawable/chatbot_scroll_down_img</item>
+         <item name="scrollDownIconBg">@drawable/scroll_down_shape</item>-->
+
+        <item name="sendIcon">@drawable/chatbot_deactive_send_img</item>
+        <item name="inputTextColor">@color/black</item>
+        <item name="inputTextBg">@drawable/chatbot_user_et_bg</item>
+        <item name="inputSendIconLayoutBg">@color/chatbot_user_et_layout_bg_color</item>
+        <!--<item name="sendIconBgActive">@color/gray</item>
+        <item name="sendIconBgDeactive">@color/white</item>
+        <item name="sendIconDeactive">@color/white</item>-->
+
+        <item name="ChatButtonStyle">@style/ChatButtonStyle</item>
+        <item name="ChatTextStyle">@style/ChatTextStyle</item>
+    </style>
+
+    <style name="ChatButtonStyle">
+        <item name="android:textColor">@color/chatbot_btn_text_color</item>
+        <item name="android:textSize">15sp</item>
+        <item name="chatButtonBg">@drawable/chatbot_btn_bg</item>
+        <!--<item name="chatButtonTextColor">chatbot_btn_text_color</item>-->
+
+    </style>
+
+    <style name="ChatTextStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="receiveTextColor">@color/black</item>
+        <item name="receiveChatBg">@drawable/chat_layout_bg</item>
+        <item name="sendTextColor">@color/white</item>
+        <item name="sendChatBg">@drawable/chat_layout_bg</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="ChatBotToolBarPopUpTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!--
+            customize chat bot toolbar popup theme
+        -->
+    </style>
+
+
+    <style name="noAnimTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="AVLoadingIndicatorView">
+        <item name="minWidth">30dip</item>
+        <item name="maxWidth">30dip</item>
+        <item name="minHeight">30dip</item>
+        <item name="maxHeight">30dip</item>
+        <item name="indicatorName">BallPulseSyncIndicator</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_from_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_to_down</item>
+    </style>
+
+    <style name="error_appearance" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+</resources>

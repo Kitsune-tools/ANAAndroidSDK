@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffff</color>
+    <color name="purple">#6A1B9A</color>
+    <color name="blue">#1565C0</color>
+    <color name="black">#000</color>
+
+    <color name="gray">#616161</color>
+    <color name="light_gray">#60616161</color>
+    <color name="send_msg_bg">#007BFF</color>
+    <color name="send_msg_idle">#007BFF</color>
+    <color name="progress_bar">#157EFB</color>
+    <color name="ria_popup_btn">#8A8A8A</color>
+    <color name="accentColor">#ff3f3f</color>
+    <color name="primaryColor">#ffb900</color>
+    <color name="primaryColorDark">#F9A825</color>
+    <color name="primary">@color/primaryColor</color>
+    <color name="chatbot_toolbar_color">@color/primary</color>
+    <color name="chatbot_name_text_color">@color/white</color>
+    <color name="chatbot_tv_text_bg">@color/white</color>
+    <color name="chatbot_tv_text_color">@android:color/black</color>
+    <color name="chatbot_user_tv_text_bg">@color/white</color>
+    <color name="chatbot_user_tv_text_color">@android:color/black</color>
+    <color name="chatbot_user_et_layout_bg_color">@color/white</color>
+
+    <color name="chatbot_btn_bg_color">@color/chatbot_toolbar_color</color>
+    <color name="chatbot_btn_text_color">@color/white</color>
+    <color name="chatbot_user_et_hint_color">#406f6f6f</color>
+    <color name="chatbot_address_card_bg_color">#727272</color>
+
+    <color name="chatbot_user_text_color_bg">#ddd</color>
+    <color name="chatbot_address_card_num_color">#B0B0B0</color>
+    <color name="chatbot_address_card_map_color">@color/white</color>
+    <color name="chatbot_address_card_confirm_color">#99e3e3e3</color>
+    <color name="chatbot_date_color">#B0B0B0</color>
+</resources>

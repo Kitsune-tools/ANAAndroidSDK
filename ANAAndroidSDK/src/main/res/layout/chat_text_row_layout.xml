@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="view"
+            type="com.ana.adapters.TextViewSectionAdapter" />
+
+        <variable
+            name="section"
+            type="com.ana.models.Section" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="4dp"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bubble_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_layout_bg">
+
+            <com.ana.customviews.WrappedTextView
+                android:id="@+id/tv_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:fontFamily="sans-serif-light"
+                android:lineSpacingExtra="2.5dp"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:textColorLink="@color/primary"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--android:textColor="#767676"-->
+        <TextView
+            android:id="@+id/tv_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@{section.dateTime}"
+            android:textColor="@color/chatbot_date_color"
+            android:textSize="10sp"
+            android:visibility="@{section.showDate ? View.VISIBLE : View.GONE}" />
+
+    </LinearLayout>
+</layout>
