@@ -2,7 +2,7 @@
 
 ### Steps To Integrate
 
-#### Step 1: Download Mobile SDK
+### Step 1: Download Mobile SDK
 
 clone the SDK.
 ```bash
